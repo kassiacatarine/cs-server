@@ -66,3 +66,4 @@ def rating(request):
     ]
     }
     return render(request, 'sparta/rating.jinja2', ctx)
+
