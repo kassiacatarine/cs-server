@@ -139,6 +139,7 @@ def organize_groups(mapping, group_size):
     """
     users_quantity = len(mapping)
 
+
     if group_size > users_quantity:
         return [mapping.copy()]
 
