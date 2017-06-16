@@ -139,7 +139,6 @@ def organize_groups(mapping, group_size):
     """
     users_quantity = len(mapping)
 
-
     if group_size > users_quantity:
         return [mapping.copy()]
 
@@ -149,7 +148,7 @@ def organize_groups(mapping, group_size):
     # Initialize possible groups as empty lists
     groups = [{} for _ in range(n_groups)]
 
-    sorted_users = sorted(mapping.items(), key=lambda x: x[1])
+    sorted_users = sorted(mapping.items(), key = lambda x: x[1])
 
     for idx in cycle([0, -1]):
         if len(sorted_users) < n_groups:
